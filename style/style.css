@@ -33,6 +33,7 @@ body {
   margin: 0 9%;
   padding-left: 1rem;
   padding-right: 1rem;
+  overflow-x: hidden;
 }
 .header-section {
   display: flex;
@@ -116,8 +117,6 @@ body {
 }
 /* Start Header */
 header {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -128,6 +127,8 @@ header.sticky {
   background: #000;
 }
 header .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -530,6 +531,7 @@ footer .footer-icons i:hover {
     margin-top: 10rem;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
+    align-items: center;
   }
   .hero .hero-info h1 {
     text-align: center;
@@ -559,7 +561,7 @@ footer .footer-icons i:hover {
   }
 }
 @media (max-width: 400px) {
-  header {
+  header .container {
     padding-top: 1.5rem;
   }
   .hero .hero-info .hero-btns {
